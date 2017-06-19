@@ -1,0 +1,29 @@
+.navbar-default .navbar-brand {
+    font-family:'Ruda', sans-serif;
+    color:#337ab7;
+    font-size:30px;
+    font-weight:600;
+}
+.navbar-default .navbar-nav>li>a
+{
+    font-family:"Lato", "Heiti SC", "Hiragino Sans GB", "STHeiti", "Source Han Sans CN", "WenQuanYi Zen Hei", "WenQuanYi Micro Hei", "微软雅黑", sans-serif;
+    color:#337ab7;
+    font-size:20px;
+    font-weight:500;
+}
+.navbar-brand
+{
+    line-height:30px;
+}
+.navbar-nav>li>a
+{
+    line-height:30px;
+}
+@media screen and (min-width: 768px)
+.carousel-indicators{
+    bottom:200px;
+}
+.carousel .item
+{
+    height:600px;
+}
