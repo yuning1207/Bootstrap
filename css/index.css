@@ -25,5 +25,50 @@
 }
 .carousel .item
 {
-    height:600px;
+    height:665px;
 }
+.down-arrow
+{
+    position:absolute;
+    width:43px;
+    height:28px;
+    left:50%;
+    bottom:30px;
+}
+.carousel-caption
+{
+    width:200px;
+    height:80px;
+    left:50%;
+    top:50%;
+    margin:-40px 0 0 -100px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
