@@ -1,14 +1,14 @@
 <!DOCTYPE HTML>
 <html>
     <head>
-        <title>导航练习</title>
+        <title>首页练习</title>
         <meta charset="utf-8">
         <link href="css/bootstrap.min.css" rel=stylesheet>
         <link href="css/index.css" rel="stylesheet">
     </head>
     <body>
         <header>
-            <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="navbar navbar-default" role="navigation">
                 <div class="container">
                 <div class="navbar-header">
                     <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-responsive-collapse">
@@ -18,7 +18,7 @@
                         <span class="icon-bar"></span>
                     </button>
        <!-- 确保无论是宽屏还是窄屏，navbar-brand都显示 -->
-                    <a href="example1.html" class="navbar-brand">ThoughtCoding实验室</a>
+                    <a href="example1.html" class="navbar-brand" id="nav">ThoughtCoding实验室</a>
                 </div>
   <!-- 屏幕宽度小于768px时，div.navbar-responsive-collapse容器里的内容都会隐藏，显示icon-bar图标，当点击icon-bar图标时，再展开。屏幕大于768px时，默认显示。 -->
                 <div class="collapse navbar-collapse navbar-responsive-collapse navbar-right">
@@ -45,17 +45,9 @@
              </div>
              <div class="item">
                  <img class="img-responsive" src="picture/index_2.jpg" alt="西安邮电大学" width="100%" height="100%">
-                 <div class="carousel-caption">
-                     <h1>轮播2的标题</h1>
-                     <p>这里是轮播图2的说明</p>
-                 </div>
              </div>
              <div class="item">
                  <img class="img-responsive" src="picture/index_3.jpg" alt="西安邮电大学" width="100%" height="100%">
-                 <div class="carousel-caption">
-                     <h1>轮播3的标题</h1>
-                     <p>这里是轮播图3的说明</p>
-                 </div>
              </div>
          </div>
          <!-- Controls -->
@@ -65,10 +57,55 @@
          <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
              <span class="glyphicon glyphicon-chevron-right"></span>
          </a>
-         <img class="down-arrow" src="picture/bitmap.jpg">
-      </div>
+         <a href="#index_2" id="slide">
+            <img id="nav_2" class="down-arrow" src="picture/bitmap.jpg">
+         </a>
     </div>
-        <script src="js/jquery.min.js"></script>
-        <script src="js/bootstrap.min.js"></script>
+    <!--轮播图结束-->
+    <!--引导区-->
+    <div id="index_2">
+        <div id="guide">
+            <ul class="nav nav-tabs nav-justified">
+                <li role="presentation"><a href="#about">About</a></li>
+                <li role="presentation"><a href="#active">Active</a></li>
+                <li role="presentation"><a href="#project">Project</a></li>
+                <li role="presentation"><a href="#q_a">Q&amp;A</a></li>
+                <li role="presentation"><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+    <!--引导区结束-->
+    <!--关于-->
+    <div id="about">
+       <a class="top" href="#nav"><img src="picture/index-top.jpg"><br>TOP</a>
+    </div>
+    <!--关于结束-->
+    <!--活动-->
+    <div id="active">
+        <a class="top" href="#nav"><img src="picture/index-top.jpg"><br>TOP</a>
+        <a href="#project" class="next"></a>
+    </div>
+    <!--活动结束-->
+    <!--项目-->
+    <div id="project">
+        <a class="top" href="#nav"><img src="picture/index-top.jpg"><br>TOP</a> 
+        <a href="#q_a" class="next"></a>
+    </div>
+    <!--项目结束-->
+    <!--问题-->
+    <div id="q_a">
+        <a class="top" href="#nav"><img src="picture/index-top.jpg"><br>TOP</a> 
+        <a href="#contact" class="next"></a>
+    </div>
+    <!--问题结束-->
+     <!--联系-->
+    <div id="contact">
+        <a class="top" href="#nav"><img src="picture/index-top.jpg"><br>TOP</a> 
+    </div>
+    <!--联系结束-->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="scripts/addLoadEvent().js"></script>
+    <script src="js/index.js"></script>
     </body>
 </html>
